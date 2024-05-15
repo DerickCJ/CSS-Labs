@@ -1,0 +1,36 @@
+/** Step one **/
+
+/** Step two **/
+h1,
+h2,
+h3 {
+  font-family: Protest Revolution;
+}
+
+/** Step three **/
+h1 {
+  font-size: 46px;
+  letter-spacing: 1.75px;
+  text-align: center;
+  color: #f9a825;
+}
+
+/** Step four **/
+p,
+a,
+li {
+  font-family: "Jaro",
+    sans-serif;
+
+}
+
+/** Step five **/
+span {
+  color: #f9a825;
+}
+
+/** Step six **/
+h3 {
+  font-size: 3em;
+  text-shadow: 4px 3px 4px rgba(0, 0, 0, .8)
+}
