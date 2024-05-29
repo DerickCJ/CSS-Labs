@@ -1,0 +1,82 @@
+body {
+  background-color: #f8f8f8;
+  font-size: 2em;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 700;
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "Header Header Header"
+    "Masthead Masthead Masthead"
+    "Main Main Main"
+    "Footer Footer Footer";
+}
+
+
+header {
+  grid-area: Header;
+
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+
+
+  height: 100%;
+  background-color: rgb(72, 173, 255);
+}
+
+.menu {
+  flex-grow: 2;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(170, 255, 255);
+}
+
+.masthead {
+  height: 100%;
+  text-align: center;
+  background-color: antiquewhite;
+  grid-area: Masthaed;
+  display: grid;
+
+
+  background-color: blueviolet;
+}
+
+
+main {
+  grid-area: Main;
+  background-color: aqua;
+}
+
+main section:nth-child(1),
+main section:nth-child(2) {
+  height: 50%;
+  display: flex;
+}
+
+main section:nth-child(1) div,
+main section:nth-child(2) div {
+  flex-grow: 1;
+  border: solid 2px;
+  height: 30vh;
+}
+
+
+
+footer {
+  grid-area: Footer;
+  display: flex;
+
+}
+
+footer div {
+  flex-grow: 1;
+  height: 100%;
+  background-color: aquamarine;
+  border: solid 2px;
+}
